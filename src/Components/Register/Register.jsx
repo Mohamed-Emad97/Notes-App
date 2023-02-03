@@ -27,7 +27,7 @@ export default function Register() {
 
     
         if(isEmpty){
-          let baseUrl = "https://route-egypt-api.herokuapp.com/";
+          let baseUrl = "https://route-movies-api.vercel.app/";
           let apiMethod = "signup";
           let {data} = await Axios.post(`${baseUrl}${apiMethod}`,user);
           console.log(data);
